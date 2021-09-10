@@ -1,0 +1,6 @@
+seaborn==0.10.1
+matplotlib==3.2.2
+opencv_contrib_python==4.5.1.48
+streamlit==0.88.0
+pandas==1.0.5
+scikit_learn==0.24.2
