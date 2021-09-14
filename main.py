@@ -57,7 +57,7 @@ if df_display_1:
     # A title 
     st.title("1. T22 SV Weld AI Vision")
     # A description
-    st.write("Here is the dataset used in this analysis:")   
+    st.write("Automated Safety Vent (SV) weld condition check")   
     file_ = open("image1.gif", "rb")
     contents = file_.read()
     data_url = base64.b64encode(contents).decode("utf-8")
