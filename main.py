@@ -82,8 +82,12 @@ if df_display_3:
     st.title("3. Missing Washer Detection by YOLO")
     # A description
     st.write("Automated defect inspection system for missing washer check")
-    st.image(img3, width=None)
-
+    #st.image(img3, width=None)
+    file_ = open("image3.gif", "rb")
+    contents = file_.read()
+    data_url = base64.b64encode(contents).decode("utf-8")
+    file_.close()
+    st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">', unsafe_allow_html=True,)
 
 
 
