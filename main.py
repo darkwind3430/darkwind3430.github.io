@@ -67,7 +67,7 @@ if df_display_1:
 
 if df_display_2:
     # A title 
-    st.title("2. Missing Cell Check")
+    st.title("2. Missing Cell Checker")
     # A description
     st.write("Automated cell quantity checker for shipping tray")    
     file_ = open("image2.gif", "rb")
@@ -79,7 +79,7 @@ if df_display_2:
    
 if df_display_3:
     # Create a title for your app
-    st.title("3. Missing Washer Detection")
+    st.title("3. Missing Washer Detector")
     # A description
     st.write("Automated defect inspection system for missing washer check")
     #st.image(img3, width=None)
