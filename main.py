@@ -44,6 +44,7 @@ sidebar.write("List of Completed Projects:")
 df_display_1 = sidebar.checkbox("1. SV Weld AI Vision", value=True)
 df_display_2 = sidebar.checkbox("2. Missing Cell Check by YOLO", value=True)
 df_display_3 = sidebar.checkbox("3. Missing Washer Detection by YOLO", value=True)
+df_display_4 = sidebar.checkbox("4. Mix Can Detection", value=True)
 
 # -----------------------------------------------------------
 # Main
@@ -89,6 +90,16 @@ if df_display_3:
     file_.close()
     st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">', unsafe_allow_html=True,)
 
-
+if df_display_4:
+    # Create a title for your app
+    st.title("4. Mix Can Detector")
+    # A description
+    st.write("Automated inspection system for wrong can model")
+    #st.image(img4, width=None)
+    file_ = open("image4.gif", "rb")
+    contents = file_.read()
+    data_url = base64.b64encode(contents).decode("utf-8")
+    file_.close()
+    st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">', unsafe_allow_html=True,)
 
 # -----------------------------------------------------------
