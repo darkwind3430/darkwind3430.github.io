@@ -41,7 +41,7 @@ sidebar = st.sidebar
 sidebar.title("Dashboard")
 sidebar.write("List of Completed Projects:")
 
-df_display_1 = sidebar.checkbox("1. T22 SV Weld AI Vision", value=True)
+df_display_1 = sidebar.checkbox("1. SV Weld AI Vision", value=True)
 df_display_2 = sidebar.checkbox("2. Missing Cell Check by YOLO", value=True)
 df_display_3 = sidebar.checkbox("3. Missing Washer Detection by YOLO", value=True)
 
@@ -55,7 +55,7 @@ st.write("Here is the list of all completed AI vision projects")
 
 if df_display_1:
     # A title 
-    st.title("1. T22 SV Weld AI Vision")
+    st.title("1. SV Weld AI Vision")
     # A description
     st.write("Automated Safety Vent (SV) weld condition check")   
     file_ = open("image1.gif", "rb")
